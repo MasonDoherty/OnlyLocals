@@ -1,0 +1,111 @@
+import { StyleSheet } from "react-native";
+const logInStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    overflow: "hidden",
+  },
+  imageBackground: {
+    flex: 1,
+    resizeMode: "cover",
+    overflow: "hidden",
+  },
+  overlay: {
+    flex: 1,
+    backgroundColor: "rgba(999, 999, 999, 0.3)",
+    justifyContent: "flex-Start",
+    alignItems: "center",
+    overflow: "hidden",
+  },
+  darkBox: {
+    backgroundColor: "rgba(238, 238, 238, .54)",
+    padding: 20,
+    height: 145,
+    width: 335,
+    borderRadius: 10,
+    margin: 30,
+  },
+  title: {
+    fontSize: 64,
+    color: "#000000",
+    fontWeight: 700,
+    lineHeight: 64,
+    fontFamily: "bebasNeue",
+    margin: 0,
+  },
+  subtitle: {
+    fontSize: 16,
+    color: "#000000",
+  },
+  inputContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "rgba(999, 999, 999, 0.85)",
+    width: 288,
+    height: 36,
+    borderRadius: 5,
+    padding: 10,
+    marginBottom: 20,
+  },
+  icon: {
+    marginRight: 10,
+  },
+  input: {
+    flex: 1,
+    fontSize: 16,
+    color: "gray",
+    width: 228,
+    height: 36,
+    padding: 10,
+    borderRadius: 8,
+  },
+  clickableButton: {
+    backgroundColor: "#000000",
+    padding: 20,
+    height: 23,
+    width: 214,
+    borderRadius: 25,
+    marginVertical: 15,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  buttonText: {
+    fontSize: 14,
+    color: "#FFFFFF",
+    fontFamily: "roboto",
+    height: 20,
+  },
+  buttonContainer: {
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 20,
+  },
+  lineContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  line: {
+    flex: 1,
+    height: 5,
+    width: 150,
+    backgroundColor: "gray",
+    marginHorizontal: 10,
+  },
+  orText: {
+    color: "#000000",
+    fontSize: 16,
+    fontFamily: "roboto",
+    marginHorizontal: 10,
+  },
+  bottomPortion: {
+    marginTop: 250,
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
+
+export default logInStyles;
