@@ -29,22 +29,25 @@ OnlyLocals is a React Native app designed to help users find and hire local tale
    Install dependencies:
    ```
 
-bash
-Copy code
-npm install
-Start the app:
-
-bash
-Copy code
-npm start
+2. Install dependencies:
+   ```bash
+   Copy code
+   npm install
+   ```
+3. Start the app:
+   ```bash
+   Copy code
+   npm start
+   ```
 
 This will launch the Expo development server, and you can run the app on your device or emulator.
+Use your dev tools to put browser in phone mode to use your browser.
 
 ## Customization
 
 The app is highly customizable to fit different service sectors. I can customize the app by modifying the code and tailoring it to your specific requirements.
 
-# Contact Information
+# **\*\*\***Contact Information**\*\*\***
 
 For questions, suggestions, or inquiries about customization, please feel free to contact the developer:
 
