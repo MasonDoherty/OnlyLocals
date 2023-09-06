@@ -1,5 +1,7 @@
 # OnlyLocals - Find Local Talent for HVAC Work and More
 
+_WORK IN PROGRESS_
+
 OnlyLocals is a React Native app designed to help users find and hire local talent for HVAC work and other sectors. This versatile app can be customized to cater to various service industries, making it a valuable tool for connecting service providers with potential clients.
 
 ## Features
@@ -31,12 +33,10 @@ OnlyLocals is a React Native app designed to help users find and hire local tale
 
 2. Install dependencies:
    ```bash
-   Copy code
    npm install
    ```
 3. Start the app:
    ```bash
-   Copy code
    npm start
    ```
 
@@ -57,3 +57,4 @@ For questions, suggestions, or inquiries about customization, please feel free t
 ## License
 
 This project is licensed under the [CC0-1.0 License](LICENSE).
+gi
