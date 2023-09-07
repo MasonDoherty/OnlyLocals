@@ -25,9 +25,12 @@ const Footer = () => {
   const navigateHome = () => {
     navigation.navigate("Home");
   };
+  const navigateAppointment = () => {
+    navigation.navigate("Appointment");
+  };
 
   if (!fontLoaded) {
-    return null; // Return a loading indicator or placeholder while fonts are loading
+    return null;
   }
 
   return (
@@ -39,7 +42,7 @@ const Footer = () => {
         </TouchableOpacity>
       </View>
       <View style={FooterStyles.iconContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={navigateAppointment}>
           <Icon name="event" type="material" size={30} color="black" />
           <Text style={FooterStyles.iconText}>Schedule</Text>
         </TouchableOpacity>
