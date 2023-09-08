@@ -50,7 +50,6 @@ const Appointment = () => {
         </View>
         <View style={Styles.content}>
           {!isServiceSelected ? (
-            // Render service selection here
             <View style={Styles.serviceContainer}>
               <Text style={Styles.messageText}>Select a Service:</Text>
               <Picker

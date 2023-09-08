@@ -18,11 +18,10 @@ const OurServices = () => {
     <SafeAreaView>
       <BackgroundAndOverlay>
         <Header />
-        <View style={Styles.darkBox}>
-          <Text style={Styles.title}> Our Services</Text>
-        </View>
-
-        <View style={Styles.contentContainer}>
+        <View style={Styles.cardContainer}>
+          <View style={Styles.darkBox}>
+            <Text style={Styles.title}> Our Services</Text>
+          </View>
           <ScrollView>
             {servicesData.map((card) => {
               return (

@@ -5,18 +5,6 @@ const homeStyles = StyleSheet.create({
     flex: 1,
     overflow: "hidden",
   },
-  imageBackground: {
-    flex: 1,
-    resizeMode: "cover",
-    overflow: "hidden",
-  },
-  overlay: {
-    flex: 1,
-    backgroundColor: "rgba(999, 999, 999, 0.3)",
-    justifyContent: "flex-start",
-    alignItems: "center",
-    overflow: "hidden",
-  },
 
   userPhoto: {
     width: 45,
@@ -34,7 +22,7 @@ const homeStyles = StyleSheet.create({
   cardContainer: {
     flex: 1,
     justifyContent: "space-evenly",
-    margin: 10,
+    marginBottom: 30,
   },
 });
 

@@ -20,12 +20,11 @@ const OurServicesStyles = StyleSheet.create({
     fontFamily: "bebasNeue",
     overflow: "visible",
   },
-  contentContainer: {
+  cardContainer: {
     flex: 1,
     width: width - 20,
-    overflow: "hidden",
     marginHorizontal: 5,
-    maxHeight: windowHeight - 280,
+    maxHeight: windowHeight - 70,
   },
 });
 export default OurServicesStyles;

@@ -47,29 +47,31 @@ const Home = () => {
   };
 
   return (
-    <SafeAreaView style={homeStyles.container}>
+    <SafeAreaView style={{ flex: 1 }}>
       <BackgroundAndOverlay>
-        <Header />
-        <View style={homeStyles.cardContainer}>
-          {cardData.map((card) => {
-            console.log("Card ID:", card.id);
+        <View style={homeStyles.container}>
+          <Header />
+          <View style={homeStyles.cardContainer}>
+            {cardData.map((card) => {
+              console.log("Card ID:", card.id);
 
-            return (
-              <TouchableOpacity
-                key={card.id}
-                onPress={() => navigateToMainPage(card)}
-              >
-                <Card
-                  id={card.id}
-                  picture={card.picture}
-                  title={card.title}
-                  text={card.text}
-                />
-              </TouchableOpacity>
-            );
-          })}
+              return (
+                <TouchableOpacity
+                  key={card.id}
+                  onPress={() => navigateToMainPage(card)}
+                >
+                  <Card
+                    id={card.id}
+                    picture={card.picture}
+                    title={card.title}
+                    text={card.text}
+                  />
+                </TouchableOpacity>
+              );
+            })}
+          </View>
+          <NewFooter />
         </View>
-        <NewFooter />
       </BackgroundAndOverlay>
     </SafeAreaView>
   );
