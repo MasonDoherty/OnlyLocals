@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { View, Text, SafeAreaView, Picker } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import Styles from "./appointmentStyles";
 import Header from "../../header/Header";
+import { Picker } from "@react-native-picker/picker";
 import NewFooter from "../../newFooter/NewFooter";
 import BackgroundAndOverlay from "../../reusable/BackgroundAndOverlay";
 import CalendarPicker from "react-native-calendar-picker";
@@ -51,7 +52,7 @@ const Appointment = () => {
           {!isServiceSelected ? (
             // Render service selection here
             <View style={Styles.serviceContainer}>
-              <Text style={Styles.serviceLabel}>Select a Service:</Text>
+              <Text style={Styles.messageText}>Select a Service:</Text>
               <Picker
                 selectedValue={selectedService}
                 onValueChange={handleServiceSelect}
@@ -67,7 +68,6 @@ const Appointment = () => {
               </Picker>
             </View>
           ) : (
-            // Render content when service is selected
             <>
               <View style={Styles.calendarContainer}>
                 <CalendarPicker
@@ -81,9 +81,9 @@ const Appointment = () => {
                 />
                 <Time onTimeSelect={handleTimeSelect} />
               </View>
-              <View style={Styles.messageBox}>
+              <View>
                 {selectedDate && selectedTime ? (
-                  <View>
+                  <View style={Styles.bigMessageBox}>
                     <Text style={Styles.messageText}>
                       Your {selectedService} is Scheduled for:{" "}
                     </Text>
@@ -93,19 +93,23 @@ const Appointment = () => {
                     </Text>
                   </View>
                 ) : selectedDate ? (
-                  <Text style={Styles.messageText}>
-                    Your Appointment is for:{" "}
-                    {moment(selectedDate).format("MMM-DD-YYYY")}
-                  </Text>
+                  <View style={Styles.messageBox}>
+                    <Text style={Styles.messageText}>
+                      Your Appointment is for:{" "}
+                      {moment(selectedDate).format("MMM-DD-YYYY")}
+                    </Text>
+                  </View>
                 ) : (
-                  <Text style={Styles.messageText}>
-                    Please select a date and time for your appointment.
-                  </Text>
+                  <View style={Styles.messageBox}>
+                    <Text style={Styles.messageText}>
+                      Please select a date and time for your appointment.
+                    </Text>
+                  </View>
                 )}
               </View>
               {isConfirmationEnabled && (
                 <TouchableOpacity style={Styles.button}>
-                  <Text style={Styles.buttonText}>Confirm</Text>
+                  <Text style={Styles.buttonText}>Next Step</Text>
                 </TouchableOpacity>
               )}
             </>

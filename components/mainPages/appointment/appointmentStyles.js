@@ -56,5 +56,32 @@ const appointmentStyles = StyleSheet.create({
     justifyContent: "center",
     marginHorizontal: 15,
   },
+  bigMessageBox: {
+    backgroundColor: "rgba(238, 238, 238, .74)",
+    padding: 20,
+    height: 115,
+    width: 350,
+    borderRadius: 30,
+    margin: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  serviceContainer: {
+    backgroundColor: "rgba(238, 238, 238, .74)",
+    padding: 20,
+    height: 115,
+    width: 350,
+    borderRadius: 30,
+    margin: 20,
+    alignItems: "center",
+  },
+  servicePicker: {
+    alignItems: "center",
+    backgroundColor: "#ffffff",
+    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: "#ccc",
+    padding: 10,
+  },
 });
 export default appointmentStyles;
